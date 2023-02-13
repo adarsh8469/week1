@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the No. of Array:- ");
+    scanf("%d",&n);
+    for(int i = 0 ; i<n ; i++)
+    {
+        int a;
+        printf("\nEnter the Size of Array:- ");
+        scanf("%d",&a);
+        int arr[a];
+        printf("\nEnter the Array Element:- ");
+        for(int j = 0 ; j<a ; j++)
+        {
+            scanf("%d",&arr[j]);
+        }
+        int k;
+        printf("\nEnter the No. to Search:- ");
+        scanf("%d",&k);
+        int q = 0;
+        for(int j = 0 ; j<a ; j++)
+        {
+            if(arr[j] == k)
+            {
+                printf("Present %d",j);
+                q++;
+            }
+        }
+        if(q == 0)
+        {
+            printf("Not Present %d",j);
+        }
+    }
+    return 0;
+}
